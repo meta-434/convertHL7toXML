@@ -3,3 +3,7 @@
 package-lock.json
 package.json
 .env
+
+# in/out files
+/in
+/out
