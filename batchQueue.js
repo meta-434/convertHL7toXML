@@ -1,10 +1,5 @@
-const fs = require("fs");
-const path = require("path");
 const EventEmitter = require("events");
 const { log } = require("./logger");
-
-const INPUT_DIR = process.env.INPUT_DIR;
-const OUTPUT_DIR = process.env.OUTPUT_DIR;
 
 class BatchQueue extends EventEmitter {
   // extending EventEmitter allows for async

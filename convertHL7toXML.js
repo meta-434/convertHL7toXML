@@ -37,14 +37,13 @@ function handleBatch(files) {
         log(`Transformed: ${filename} → ${outputPath}`);
 
         // Cleanup: delete the original input file only after successful write
-        fs.unlink(inputPath, (err) => {
-          if (err) {
-            log(`Error deleting input file ${filename}: ${err.message}`);
-            // Depending on your needs, decide if you want to exit or continue
-          } else {
-            log(`Deleted input file: ${filename}`);
-          }
-        });
+        // fs.unlink(inputPath, (err) => {
+        //   if (err) {
+        //     log(`Error deleting input file ${filename}: ${err.message}`);
+        //   } else {
+        //     log(`Deleted input file: ${filename}`);
+        //   }
+        // });
       });
     });
   });
