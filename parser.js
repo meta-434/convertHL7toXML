@@ -13,24 +13,104 @@ function segToDI(segment, index) {
 
   // fields are in order: 0|1|2|3|4|5|...
   const fields = segment.children;
+  // console.log(`Fields3: ${JSON.stringify(fields[3]?.children)}}`);
+  console.log(`fields[0] is type ${fields[0]?.value} for element #${index}`);
 
+  if (fields[0]?.value === "MSH") {
+    hold = {
+      "@K": `Info`,
+      DI: [
+        {
+          "@K": "Description",
+          "@V": `${fields[2]?.value}`,
+        },
+        {
+          "@K": "Version",
+          "@V": `${fields[11]?.value}`,
+        },
+      ],
+    };
+  }
+
+  if (fields[0]?.value === "PID") {
+    hold = {
+      "@K": `Patient`,
+      DI: [
+        {
+          "@K": "externalId",
+          "@V": `${fields[2]?.value}`,
+        },
+        {
+          "@K": "internalId",
+          "@V": `${fields[11]?.value}`,
+        },
+        {
+          "@K": "alternateId",
+          "@V": `${fields[2]?.value}`,
+        },
+        {
+          "@K": "FamilyName",
+          "@V": `${fields[2]?.value}`,
+        },
+        {
+          "@K": "GivenName",
+          "@V": `${fields[2]?.value}`,
+        },
+        {
+          "@K": "MiddleName",
+          "@V": `${fields[2]?.value}`,
+        },
+        {
+          "@K": "DateOfBirth",
+          "@V": `${fields[2]?.value}`,
+        },
+        {
+          "@K": "Sex",
+          "@V": `${fields[2]?.value}`,
+        },
+        {
+          "@K": "DicomPatientId",
+          "@V": `${fields[2]?.value}`,
+        },
+        {
+          "@K": "PatientAccountNumber",
+          "@V": `${fields[2]?.value}`,
+        },
+      ],
+    };
+  }
+  // TODO: PV1 segment map
+  // if (fields[0]?.value === "OBX") { }
+  // TODO: ORC segment map
+  // if (fields[0]?.value === "OBX") { }
+  // TODO: OBR segment map
+  // if (fields[0]?.value === "OBX") { }
   // OBX segment map
   if (fields[0]?.value === "OBX") {
-    console.log(`fields[0] is type OBX for element #${index}`);
     hold = {
       "@K": `Value${index}`,
       "@T": "0",
-      DI: {
-        "@K": "FindingID",
-        "@V": "ABCD",
-      },
-      DI: {
-        "@K": "Unit",
-        "@V": "1234",
-      },
+      DI: [
+        {
+          "@K": "FindingID",
+          "@V": `${fields[3]?.value}`,
+        },
+        {
+          "@K": "Unit",
+          "@V": `${fields[6]?.value}`,
+        },
+        {
+          "@K": "ValueToUse",
+          "@V": `${fields[5]?.value}`,
+        },
+        {
+          "@K": "Description",
+          "@V": `${fields[3]?.children?.[1]?.value}`,
+        },
+      ],
     };
   }
-  console.log("hold is: ", JSON.stringify(hold));
+
   return hold;
 }
 
@@ -43,20 +123,28 @@ function parseHL7ToXmlObject(hl7Text) {
   const model = parser.getHl7Model(hl7Text.trimEnd());
   const segments = model.children;
   const diBlocks = [];
-  const obxSegments = segments.filter((seg) => {
+  const segmentsValid = segments.filter((seg) => {
     if (!seg) {
       console.warn("Warning: undefined segment detected");
       return false;
     }
     console.log(`Segment found: ${seg.name}`);
-    return seg.name === "OBX";
+    // segment types we care about
+    return (
+      seg.name === "MSH" ||
+      seg.name === "PID" ||
+      seg.name === "PV1" ||
+      seg.name === "ORC" ||
+      seg.name === "OBR" ||
+      seg.name === "OBX"
+    );
   });
 
-  obxSegments.forEach((segment, index) =>
+  segmentsValid.forEach((segment, index) =>
     diBlocks.push(segToDI(segment, index)),
   );
 
-  console.log("diBlocks =", JSON.stringify(diBlocks, null, 2));
+  // console.log("diBlocks =", JSON.stringify(diBlocks, null, 2));
 
   const fullObject = {
     FI_DCMSR: {
