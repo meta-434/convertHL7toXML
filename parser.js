@@ -1,43 +1,37 @@
 require("dotenv").config();
 const { Hl7Parser } = require("@amida-tech/hl7-parser");
-const o2x = require("object-to-xml");
+const { create } = require("xmlbuilder2");
 const { log } = require("./logger.js");
-console.log("✅ parser.js loaded");
 
-function obxSegToDI(segment, index) {
-  console.log("makes it");
+function segToDI(segment, index) {
+  let hold;
 
   if (!segment || !segment.children || !Array.isArray(segment.children)) {
-    console.warn("Invalid OBX segment:", segment);
+    console.warn("Invalid segment:", segment);
     return undefined;
   }
 
-  // OBX fields are in order: OBX|1|2|3|4|5|...
+  // fields are in order: 0|1|2|3|4|5|...
   const fields = segment.children;
 
-  const type = fields[2]?.value || ""; // OBX-2
-  const observationId = fields[3]?.value || ""; // OBX-3 (may have subfields)
-  const value = fields[5]?.value || ""; // OBX-5
-  const unit = fields[6]?.value || ""; // OBX-6
-
-  // OBX-3 children: subfields like LV_EDV^LV ED volume^99R42
-  let description = "";
-  const obx3 = fields[3];
-  if (obx3?.children?.[1]?.value) {
-    description = obx3.children[1].value;
+  // OBX segment map
+  if (fields[0]?.value === "OBX") {
+    console.log(`fields[0] is type OBX for element #${index}`);
+    hold = {
+      "@K": `Value${index}`,
+      "@T": "0",
+      DI: {
+        "@K": "FindingID",
+        "@V": "ABCD",
+      },
+      DI: {
+        "@K": "Unit",
+        "@V": "1234",
+      },
+    };
   }
-
-  return {
-    DI: {
-      "@": { K: `Value${index}`, T: type === "NM" ? "0" : "1" },
-      "#": [
-        { DI: { "@": { K: "FindingId", V: observationId } } },
-        { DI: { "@": { K: "Unit", V: unit } } },
-        { DI: { "@": { K: "ValueToUse", V: value } } },
-        { DI: { "@": { K: "Description", V: description } } },
-      ],
-    },
-  };
+  console.log("hold is: ", JSON.stringify(hold));
+  return hold;
 }
 
 /**
@@ -46,8 +40,9 @@ function obxSegToDI(segment, index) {
  */
 function parseHL7ToXmlObject(hl7Text) {
   const parser = new Hl7Parser();
-  const model = parser.getHl7Model(hl7Text);
+  const model = parser.getHl7Model(hl7Text.trimEnd());
   const segments = model.children;
+  const diBlocks = [];
   const obxSegments = segments.filter((seg) => {
     if (!seg) {
       console.warn("Warning: undefined segment detected");
@@ -57,39 +52,29 @@ function parseHL7ToXmlObject(hl7Text) {
     return seg.name === "OBX";
   });
 
-  const diBlocks = obxSegments
-    .map((segment, index) => obxSegToDI(segment, index))
-    .filter((x) => x !== undefined);
+  obxSegments.forEach((segment, index) =>
+    diBlocks.push(segToDI(segment, index)),
+  );
 
   console.log("diBlocks =", JSON.stringify(diBlocks, null, 2));
 
   const fullObject = {
-    '?xml version="1.0" encoding="UTF-8"?': null,
     FI_DCMSR: {
-      "@": {
-        srType: "Circle",
-        version: "1.0",
-        emdVersion: "1.0.7",
-        fullVersion: "1.2.3",
-        manufacturer: "Circle",
-        implementationVersionName: "2.5.1",
-        implementationClassUID: "CIRCLE",
-        source: "CIRCLE",
-      },
-      "#": [
-        {
-          DI: {
-            "@": { K: "Info" },
-            "#": [
-              { DI: { "@": { K: "Description", V: "Circle" } } },
-              { DI: { "@": { K: "Version", V: "2.5.1" } } },
-            ],
-          },
-        },
-      ],
+      "@srType": "Circle",
+      "@version": "1.0",
+      "@emdVersion": "1.0.7",
+      "@fullVersion": "1.2.3",
+      "@manufacturer": "Circle",
+      "@implementationVersionName": "2.5.1",
+      "@implementationClassUID": "CIRCLE",
+      "@source": "CIRCLE",
+      DI: diBlocks,
     },
   };
-  return o2x(fullObject);
+
+  return create({ version: "1.0", encoding: "UTF-8" }, fullObject).end({
+    prettyPrint: true,
+  });
 }
 
 module.exports = { parseHL7ToXmlObject };
