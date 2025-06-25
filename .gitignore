@@ -1,12 +1,10 @@
 # Ignore node_modules and package files
 /node_modules
-package-lock.json
-package.json
 .env
 
 # in/out files
-/in
-/out
+# /in
+# /out
 
 # logger files
 log.txt
