@@ -1,0 +1,85 @@
+OBX|3|ST|SiteOfServiceTypeOfFacility^Site Of Service Type Of Facility^99R42|1|||||||C
+OBX|4|ST|SiteOfServiceAddress^Site Of Service Address^99R42|1|||||||C
+OBX|5|ST|SiteOfServicePhone^Site Of Service Phone^99R42|1|||||||C
+OBX|6|ST|SiteOfServiceAccreditationEntity^Site Of Service Accreditation Entity^99R42|1|||||||C
+OBX|7|ST|SiteOfServiceAccreditationStatus^Site Of Service Accreditation Status^99R42|1|||||||C
+OBX|8|ST|PHN^Patient Health Number^99R42|1|HL7PIDTest||||||C
+OBX|9|ST|StudyInstanceUID^DICOM StudyInstanceUID^99R42|1|1.2.276.0.7230010.3.1.2.2490634058.1240.1559307945.6201||||||C
+OBX|10|ST|AccessionNumber^DICOM Accession Number^99R42|1|TestAcc||||||C
+OBX|11|ST|PriorNames^Patient Prior Names^99R42|1|||||||C
+OBX|12|ST|Ethnicity^Patient Ethnicity^99R42|1| (Other)||||||C
+OBX|13|ST|InsuranceInformation^Patient Insurance Information^99R42|1|||||||C
+OBX|14|ST|Status^Report Status^99R42|1|Final Addendum Report||||||C
+OBX|15|ST|MRN^Medical Record Number^99R42|1|1||||||C
+OBX|16|ST|CustomPatientID^DICOM Custom Patient ID^99R42|1|||||||C
+OBX|17|ST|Gender^Patient Gender^99R42|1|Male||||||C
+OBX|18|DT|Birthdate^Patient Birthdate^99R42|1|19670824||||||C
+OBX|19|DT|StudyDate^DICOM Study Date^99R42|1|20190402||||||C
+OBX|20|NM|PatientAge^Patient Age^99R42|1|51||||||C
+OBX|21|ST|StudyName^DICOM Study Name^99R42|1|MRI-CARDIAC W/WO CONTRAST||||||C
+OBX|22|ST|ReferringPhysician^DICOM Referring Physician^99R42|1|unknown||||||C
+OBX|23|ST|PhysicianNationalIdentifier^Referring Physician National Identifier^99R42|1|||||||C
+OBX|24|ST|BloodPressure^Blood Pressure^99R42|1|/||||||C
+OBX|25|NM|HeartRate^Heart Rate^99R42|1|49|beats/min|||||C
+OBX|26|NM|Height^Height^99R42|1|173|cm|||||C
+OBX|27|NM|Weight^Weight^99R42|1|94|kg|||||C
+OBX|28|NM|BMI^Body Mass Index^99R42|1|31|kg/m2|||||C
+OBX|29|NM|BSA^Body Surface Area^99R42|1|2.12|m2|||||C
+OBX|30|ST|BSAMethod^Body Surface Area Formula^99R42|1|Mosteller Formula||||||C
+OBX|31|ST|ImageQuality^Image Quality^99R42|1|||||||C
+OBX|32|ST|ContrastAgentAdministrationMethod^Contrast Agent Administration Method^99R42|1|||||||C
+OBX|33|ST|ContrastAgent^Contrast Agent^99R42|1|||||||C
+OBX|34|NM|ContrastAgentDose^Contrast Agent Dose^99R42|1|0|mL|||||C
+OBX|35|ST|ScannerManufacturer^Scanner Manufacturer^99R42|1|SIEMENS||||||C
+OBX|36|ST|ScannerModel^Scanner Model^99R42|1|Aera||||||C
+OBX|37|ST|ScannerSerialNumber^Scanner Serial Number^99R42|1|||||||C
+OBX|38|ST|ScannerSoftwarePlatform^Scanner Software Platform^99R42|1|syngo MR E11||||||C
+OBX|39|ST|InducingStressMethod^Inducing Stress Method^99R42|1|||||||C
+OBX|40|ST|StressProtocol^Stress Protocol^99R42|1|||||||C
+OBX|41|ST|MagnetType^Magnet Type^99R42|1|||||||C
+OBX|42|ST|FieldStrength^Field Strength^99R42|1|||||||C
+OBX|43|ST|ScannerType^Scanner Type^99R42|1|||||||C
+OBX|44|ST|Gating^Gating^99R42|1|||||||C
+OBX|45|ST|mAs^mAs^99R42|1|||||||C
+OBX|46|ST|kVp^kVp^99R42|1|||||||C
+OBX|47|ST|RadiationReductionStrategy^Radiation Reduction Strategy^99R42|1|||||||C
+OBX|48|NM|EstimatedRadiationDose^Estimated Radiation Dose^99R42|1|0|mSv|||||C
+OBX|49|TX|PatientHistory^Patient History^99R42|1|||||||C
+OBX|50|TX|ClinicalSituations^Clinical Situations^99R42|1|||||||C
+OBX|51|TX|StudyIndications^Study Indications^99R42|1|||||||C
+OBX|52|TX|RiskFactors^Risk Factors^99R42|1|||||||C
+OBX|53|TX|Medications^Medications^99R42|1|||||||C
+OBX|54|TX|Allergies^Allergies^99R42|1|||||||C
+OBX|55|ST|Staff^Staff^99R42|1|||||||C
+OBX|56|ST|Modality^Modality^99R42|1|MR||||||C
+OBX|57|ST|ProtocolName^Protocol Name^99R42|1|Not set||||||C
+OBX|58|ST|IndicationName^Indication Name^99R42|1|||||||C
+OBX|59|ST|Techniques^Techniques^99R42|1|||||||C
+OBX|60|NM|LV_EDV^LV ED volume^99R42^8821-1^LV ED vol Imaging^LN|1|234.105|mL|||||C
+OBX|61|NM|LV_EDV_ZValue^LV ED volume Z-Value^99R42|1|0||||||C
+OBX|62|NM|LV_EDVI^LV ED volume / height^99R42|1|135.556|mL/m|||||C
+OBX|63|NM|LV_EDV_AI^LV ED volume / BSA^99R42|1|110.302|mL/m2|||||C
+OBX|64|NM|LV_ESV^LV ES volume^99R42^8823-7^LV ES vol Imaging^LN|1|116.982|mL|||||C
+OBX|65|NM|LV_ESV_ZValue^LV ES volume Z-Value^99R42|1|0||||||C
+OBX|66|NM|LV_ESVI^LV ES volume / Height^99R42|1|67.737|mL/m|||||C
+OBX|67|NM|LV_ESV_AI^LV ES volume / BSA^99R42|1|55.118|mL/m2|||||C
+OBX|68|NM|LV_SV^LV SV^99R42^8772-6^LV SV MRI^LN|1|117.123|mL|||||C
+OBX|69|NM|LV_SV_ZValue^LV SV Z-Value^99R42|1|0||||||C
+OBX|70|NM|LV_SVI^LV SV / height^99R42|1|67.819|mL/m|||||C
+OBX|71|NM|LV_SV_AI^LV SV / BSA^99R42^8792-4^LV SVI MRI^LN|1|55.184|mL/m2|||||C
+OBX|72|NM|LV_EF^LV EF^99R42^8811-2^LV EF MRI^LN|1|50.03|%|||||C
+OBX|73|NM|LV_EF_ZValue^LV EF Z-Value^99R42|1|0||||||C
+OBX|74|NM|LV_CardiacOutput^LV Cardiac Output^99R42^8738-7^LV Output MRI^LN|1|5.809|L/min|||||C
+OBX|75|NM|LV_CardiacOutput_ZValue^LV Cardiac Output Z-Value^99R42|1|0||||||C
+OBX|76|NM|LV_CardiacIndex^LV Cardiac Index^99R42^8752-8^LV Cardiac index MRI^LN|1|2.737|L/min/m2|||||C
+OBX|77|NM|LV_Mass^LV Mass^99R42|1|201.855|g|||||C
+OBX|78|NM|LV_Mass_ZValue^LV Mass Z-Value^99R42|1|0||||||C
+OBX|79|NM|LV_MI^LV Mass / height^99R42|1|116.882|g/m|||||C
+OBX|80|NM|LV_Mass_AI^LV Mass / BSA^99R42|1|95.107|g/m2|||||C
+OBX|81|NM|LV_MyoMass_Diast^LV Myo Mass Diastole^99R42|1|193.685|g|||||C
+OBX|82|NM|LV_MyoMass_Diast_I^LV Myo Mass Diastole / height^99R42|1|112.151|g/m|||||C
+OBX|83|NM|LV_MyoMass_Diast_AI^LV Myo Mass Diastole / BSA^99R42|1|91.257|g/m2|||||C
+OBX|84|NM|LV_MyoMass_Syst^LV Myo Mass Systole^99R42|1|210.025|g|||||C
+OBX|85|NM|LV_MyoMass_Syst_I^LV Myo Mass Systole / height^99R42|1|121.613|g/m|||||C
+OBX|86|NM|LV_MyoMass_Syst_AI^LV Myo Mass Systole / BSA^99R42|1|98.956|g/m2|||||C
+OBX|87|NM|LV_PapMass_Diast^LV Papillary Mass Diastole^99R42|1|0|g|||||C

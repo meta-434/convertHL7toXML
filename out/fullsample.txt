@@ -1,0 +1,369 @@
+MSH|^~\&|CIRCLE|CIRCLE|CIRCLE|CIRCLE|20250213154451||ORU^R01^ORU_R01|20250213154451.051539|P|2.5.1|||AL|AL||UNICODE UTF-8
+PID||HL7PID|HL7PID||Jones^John^^^Mr.||19670824|M|||123 West St.^^Denver^CO^80020^USA|||||||
+PV1||O|OP^PAREG^||||2342^Jones^Bob|||OP|||||||||2|||||||||||||||||||||||||20190401110114|
+ORC|NW|20190401110114
+OBR|1|20190401110114|HL7TestAccessionNumber|003038^MRI-CARDIAC W/WO CONTRAST^L|||20190401110114|||||||||||||||20250213154451|||C|||||||admin10001&User&Administrator&&&|1.2.276.0.7230010.3.1.2.2490634058.1240.1559307945.6201
+OBX|1|ST|SiteOfServiceLaboratory^Site Of Service Laboratory Name^99R42|1|||||||C
+OBX|2|ST|SiteOfServiceLocation^Site Of Service Location^99R42|1|||||||C
+OBX|3|ST|SiteOfServiceTypeOfFacility^Site Of Service Type Of Facility^99R42|1|||||||C
+OBX|4|ST|SiteOfServiceAddress^Site Of Service Address^99R42|1|||||||C
+OBX|5|ST|SiteOfServicePhone^Site Of Service Phone^99R42|1|||||||C
+OBX|6|ST|SiteOfServiceAccreditationEntity^Site Of Service Accreditation Entity^99R42|1|||||||C
+OBX|7|ST|SiteOfServiceAccreditationStatus^Site Of Service Accreditation Status^99R42|1|||||||C
+OBX|8|ST|PHN^Patient Health Number^99R42|1|HL7PIDTest||||||C
+OBX|9|ST|StudyInstanceUID^DICOM StudyInstanceUID^99R42|1|1.2.276.0.7230010.3.1.2.2490634058.1240.1559307945.6201||||||C
+OBX|10|ST|AccessionNumber^DICOM Accession Number^99R42|1|TestAcc||||||C
+OBX|11|ST|PriorNames^Patient Prior Names^99R42|1|||||||C
+OBX|12|ST|Ethnicity^Patient Ethnicity^99R42|1| (Other)||||||C
+OBX|13|ST|InsuranceInformation^Patient Insurance Information^99R42|1|||||||C
+OBX|14|ST|Status^Report Status^99R42|1|Final Addendum Report||||||C
+OBX|15|ST|MRN^Medical Record Number^99R42|1|1||||||C
+OBX|16|ST|CustomPatientID^DICOM Custom Patient ID^99R42|1|||||||C
+OBX|17|ST|Gender^Patient Gender^99R42|1|Male||||||C
+OBX|18|DT|Birthdate^Patient Birthdate^99R42|1|19670824||||||C
+OBX|19|DT|StudyDate^DICOM Study Date^99R42|1|20190402||||||C
+OBX|20|NM|PatientAge^Patient Age^99R42|1|51||||||C
+OBX|21|ST|StudyName^DICOM Study Name^99R42|1|MRI-CARDIAC W/WO CONTRAST||||||C
+OBX|22|ST|ReferringPhysician^DICOM Referring Physician^99R42|1|unknown||||||C
+OBX|23|ST|PhysicianNationalIdentifier^Referring Physician National Identifier^99R42|1|||||||C
+OBX|24|ST|BloodPressure^Blood Pressure^99R42|1|/||||||C
+OBX|25|NM|HeartRate^Heart Rate^99R42|1|49|beats/min|||||C
+OBX|26|NM|Height^Height^99R42|1|173|cm|||||C
+OBX|27|NM|Weight^Weight^99R42|1|94|kg|||||C
+OBX|28|NM|BMI^Body Mass Index^99R42|1|31|kg/m2|||||C
+OBX|29|NM|BSA^Body Surface Area^99R42|1|2.12|m2|||||C
+OBX|30|ST|BSAMethod^Body Surface Area Formula^99R42|1|Mosteller Formula||||||C
+OBX|31|ST|ImageQuality^Image Quality^99R42|1|||||||C
+OBX|32|ST|ContrastAgentAdministrationMethod^Contrast Agent Administration Method^99R42|1|||||||C
+OBX|33|ST|ContrastAgent^Contrast Agent^99R42|1|||||||C
+OBX|34|NM|ContrastAgentDose^Contrast Agent Dose^99R42|1|0|mL|||||C
+OBX|35|ST|ScannerManufacturer^Scanner Manufacturer^99R42|1|SIEMENS||||||C
+OBX|36|ST|ScannerModel^Scanner Model^99R42|1|Aera||||||C
+OBX|37|ST|ScannerSerialNumber^Scanner Serial Number^99R42|1|||||||C
+OBX|38|ST|ScannerSoftwarePlatform^Scanner Software Platform^99R42|1|syngo MR E11||||||C
+OBX|39|ST|InducingStressMethod^Inducing Stress Method^99R42|1|||||||C
+OBX|40|ST|StressProtocol^Stress Protocol^99R42|1|||||||C
+OBX|41|ST|MagnetType^Magnet Type^99R42|1|||||||C
+OBX|42|ST|FieldStrength^Field Strength^99R42|1|||||||C
+OBX|43|ST|ScannerType^Scanner Type^99R42|1|||||||C
+OBX|44|ST|Gating^Gating^99R42|1|||||||C
+OBX|45|ST|mAs^mAs^99R42|1|||||||C
+OBX|46|ST|kVp^kVp^99R42|1|||||||C
+OBX|47|ST|RadiationReductionStrategy^Radiation Reduction Strategy^99R42|1|||||||C
+OBX|48|NM|EstimatedRadiationDose^Estimated Radiation Dose^99R42|1|0|mSv|||||C
+OBX|49|TX|PatientHistory^Patient History^99R42|1|||||||C
+OBX|50|TX|ClinicalSituations^Clinical Situations^99R42|1|||||||C
+OBX|51|TX|StudyIndications^Study Indications^99R42|1|||||||C
+OBX|52|TX|RiskFactors^Risk Factors^99R42|1|||||||C
+OBX|53|TX|Medications^Medications^99R42|1|||||||C
+OBX|54|TX|Allergies^Allergies^99R42|1|||||||C
+OBX|55|ST|Staff^Staff^99R42|1|||||||C
+OBX|56|ST|Modality^Modality^99R42|1|MR||||||C
+OBX|57|ST|ProtocolName^Protocol Name^99R42|1|Not set||||||C
+OBX|58|ST|IndicationName^Indication Name^99R42|1|||||||C
+OBX|59|ST|Techniques^Techniques^99R42|1|||||||C
+OBX|60|NM|LV_EDV^LV ED volume^99R42^8821-1^LV ED vol Imaging^LN|1|234.105|mL|||||C
+OBX|61|NM|LV_EDV_ZValue^LV ED volume Z-Value^99R42|1|0||||||C
+OBX|62|NM|LV_EDVI^LV ED volume / height^99R42|1|135.556|mL/m|||||C
+OBX|63|NM|LV_EDV_AI^LV ED volume / BSA^99R42|1|110.302|mL/m2|||||C
+OBX|64|NM|LV_ESV^LV ES volume^99R42^8823-7^LV ES vol Imaging^LN|1|116.982|mL|||||C
+OBX|65|NM|LV_ESV_ZValue^LV ES volume Z-Value^99R42|1|0||||||C
+OBX|66|NM|LV_ESVI^LV ES volume / Height^99R42|1|67.737|mL/m|||||C
+OBX|67|NM|LV_ESV_AI^LV ES volume / BSA^99R42|1|55.118|mL/m2|||||C
+OBX|68|NM|LV_SV^LV SV^99R42^8772-6^LV SV MRI^LN|1|117.123|mL|||||C
+OBX|69|NM|LV_SV_ZValue^LV SV Z-Value^99R42|1|0||||||C
+OBX|70|NM|LV_SVI^LV SV / height^99R42|1|67.819|mL/m|||||C
+OBX|71|NM|LV_SV_AI^LV SV / BSA^99R42^8792-4^LV SVI MRI^LN|1|55.184|mL/m2|||||C
+OBX|72|NM|LV_EF^LV EF^99R42^8811-2^LV EF MRI^LN|1|50.03|%|||||C
+OBX|73|NM|LV_EF_ZValue^LV EF Z-Value^99R42|1|0||||||C
+OBX|74|NM|LV_CardiacOutput^LV Cardiac Output^99R42^8738-7^LV Output MRI^LN|1|5.809|L/min|||||C
+OBX|75|NM|LV_CardiacOutput_ZValue^LV Cardiac Output Z-Value^99R42|1|0||||||C
+OBX|76|NM|LV_CardiacIndex^LV Cardiac Index^99R42^8752-8^LV Cardiac index MRI^LN|1|2.737|L/min/m2|||||C
+OBX|77|NM|LV_Mass^LV Mass^99R42|1|201.855|g|||||C
+OBX|78|NM|LV_Mass_ZValue^LV Mass Z-Value^99R42|1|0||||||C
+OBX|79|NM|LV_MI^LV Mass / height^99R42|1|116.882|g/m|||||C
+OBX|80|NM|LV_Mass_AI^LV Mass / BSA^99R42|1|95.107|g/m2|||||C
+OBX|81|NM|LV_MyoMass_Diast^LV Myo Mass Diastole^99R42|1|193.685|g|||||C
+OBX|82|NM|LV_MyoMass_Diast_I^LV Myo Mass Diastole / height^99R42|1|112.151|g/m|||||C
+OBX|83|NM|LV_MyoMass_Diast_AI^LV Myo Mass Diastole / BSA^99R42|1|91.257|g/m2|||||C
+OBX|84|NM|LV_MyoMass_Syst^LV Myo Mass Systole^99R42|1|210.025|g|||||C
+OBX|85|NM|LV_MyoMass_Syst_I^LV Myo Mass Systole / height^99R42|1|121.613|g/m|||||C
+OBX|86|NM|LV_MyoMass_Syst_AI^LV Myo Mass Systole / BSA^99R42|1|98.956|g/m2|||||C
+OBX|87|NM|LV_PapMass_Diast^LV Papillary Mass Diastole^99R42|1|0|g|||||C
+OBX|88|NM|LV_PapMass_Syst^LV Papillary Mass Systole^99R42|1|0|g|||||C
+OBX|89|NM|LV_HeartRate^LV Heart Rate^99R42|1|49.6||||||C
+OBX|90|NM|LV_ESWS^LV ES Wall Stress^99R42|1|0|10*3.N/m2|||||C
+OBX|91|NM|GlobalPeakWallThickness_diast^Global Peak Wall Thickness^99R42|1|0|mm|||||C
+OBX|92|ST|LVGlobalMass_Method^LV Global Mass Method^99R42|1|Monoplan 2CV||||||C
+OBX|93|NM|MAPSE_Inferior^MAPSE Inferior^99R42|1|7.627|mm|||||C
+OBX|94|NM|MAPSE_Anterior^MAPSE Anterior^99R42|1|8.761|mm|||||C
+OBX|95|NM|MAPSE_Lateral^MAPSE Lateral^99R42|1|0|mm|||||C
+OBX|96|NM|MAPSE_Septal^MAPSE Septal^99R42|1|0|mm|||||C
+OBX|97|ST|LVRegTissueChar_Endocardium_Segment_1^LV Regional Tissue Characterization: Endocardium Segment 1^99R42|1|Not Assessed||||||C
+OBX|98|ST|LVRegTissueChar_Epicardium_Segment_1^LV Regional Tissue Characterization: Epicardium Segment 1^99R42|1|Not Assessed||||||C
+OBX|99|ST|LVRegTissueChar_Endocardium_Segment_2^LV Regional Tissue Characterization: Endocardium Segment 2^99R42|1|Not Assessed||||||C
+OBX|100|ST|LVRegTissueChar_Epicardium_Segment_2^LV Regional Tissue Characterization: Epicardium Segment 2^99R42|1|Not Assessed||||||C
+OBX|101|ST|LVRegTissueChar_Endocardium_Segment_3^LV Regional Tissue Characterization: Endocardium Segment 3^99R42|1|Not Assessed||||||C
+OBX|102|ST|LVRegTissueChar_Epicardium_Segment_3^LV Regional Tissue Characterization: Epicardium Segment 3^99R42|1|Not Assessed||||||C
+OBX|103|ST|LVRegTissueChar_Endocardium_Segment_4^LV Regional Tissue Characterization: Endocardium Segment 4^99R42|1|Not Assessed||||||C
+OBX|104|ST|LVRegTissueChar_Epicardium_Segment_4^LV Regional Tissue Characterization: Epicardium Segment 4^99R42|1|Not Assessed||||||C
+OBX|105|ST|LVRegTissueChar_Endocardium_Segment_5^LV Regional Tissue Characterization: Endocardium Segment 5^99R42|1|Not Assessed||||||C
+OBX|106|ST|LVRegTissueChar_Epicardium_Segment_5^LV Regional Tissue Characterization: Epicardium Segment 5^99R42|1|Not Assessed||||||C
+OBX|107|ST|LVRegTissueChar_Endocardium_Segment_6^LV Regional Tissue Characterization: Endocardium Segment 6^99R42|1|Not Assessed||||||C
+OBX|108|ST|LVRegTissueChar_Epicardium_Segment_6^LV Regional Tissue Characterization: Epicardium Segment 6^99R42|1|Not Assessed||||||C
+OBX|109|ST|LVRegTissueChar_Endocardium_Segment_7^LV Regional Tissue Characterization: Endocardium Segment 7^99R42|1|Not Assessed||||||C
+OBX|110|ST|LVRegTissueChar_Epicardium_Segment_7^LV Regional Tissue Characterization: Epicardium Segment 7^99R42|1|Not Assessed||||||C
+OBX|111|ST|LVRegTissueChar_Endocardium_Segment_8^LV Regional Tissue Characterization: Endocardium Segment 8^99R42|1|Not Assessed||||||C
+OBX|112|ST|LVRegTissueChar_Epicardium_Segment_8^LV Regional Tissue Characterization: Epicardium Segment 8^99R42|1|Not Assessed||||||C
+OBX|113|ST|LVRegTissueChar_Endocardium_Segment_9^LV Regional Tissue Characterization: Endocardium Segment 9^99R42|1|Not Assessed||||||C
+OBX|114|ST|LVRegTissueChar_Epicardium_Segment_9^LV Regional Tissue Characterization: Epicardium Segment 9^99R42|1|Not Assessed||||||C
+OBX|115|ST|LVRegTissueChar_Endocardium_Segment_10^LV Regional Tissue Characterization: Endocardium Segment 10^99R42|1|Not Assessed||||||C
+OBX|116|ST|LVRegTissueChar_Epicardium_Segment_10^LV Regional Tissue Characterization: Epicardium Segment 10^99R42|1|Not Assessed||||||C
+OBX|117|ST|LVRegTissueChar_Endocardium_Segment_11^LV Regional Tissue Characterization: Endocardium Segment 11^99R42|1|Not Assessed||||||C
+OBX|118|ST|LVRegTissueChar_Epicardium_Segment_11^LV Regional Tissue Characterization: Epicardium Segment 11^99R42|1|Not Assessed||||||C
+OBX|119|ST|LVRegTissueChar_Endocardium_Segment_12^LV Regional Tissue Characterization: Endocardium Segment 12^99R42|1|Not Assessed||||||C
+OBX|120|ST|LVRegTissueChar_Epicardium_Segment_12^LV Regional Tissue Characterization: Epicardium Segment 12^99R42|1|Not Assessed||||||C
+OBX|121|ST|LVRegTissueChar_Endocardium_Segment_13^LV Regional Tissue Characterization: Endocardium Segment 13^99R42|1|Not Assessed||||||C
+OBX|122|ST|LVRegTissueChar_Epicardium_Segment_13^LV Regional Tissue Characterization: Epicardium Segment 13^99R42|1|Not Assessed||||||C
+OBX|123|ST|LVRegTissueChar_Endocardium_Segment_14^LV Regional Tissue Characterization: Endocardium Segment 14^99R42|1|Not Assessed||||||C
+OBX|124|ST|LVRegTissueChar_Epicardium_Segment_14^LV Regional Tissue Characterization: Epicardium Segment 14^99R42|1|Not Assessed||||||C
+OBX|125|ST|LVRegTissueChar_Endocardium_Segment_15^LV Regional Tissue Characterization: Endocardium Segment 15^99R42|1|Not Assessed||||||C
+OBX|126|ST|LVRegTissueChar_Epicardium_Segment_15^LV Regional Tissue Characterization: Epicardium Segment 15^99R42|1|Not Assessed||||||C
+OBX|127|ST|LVRegTissueChar_Endocardium_Segment_16^LV Regional Tissue Characterization: Endocardium Segment 16^99R42|1|Not Assessed||||||C
+OBX|128|ST|LVRegTissueChar_Epicardium_Segment_16^LV Regional Tissue Characterization: Epicardium Segment 16^99R42|1|Not Assessed||||||C
+OBX|129|ST|LVRegTissueChar_Epicardium_Segment_17^LV Regional Tissue Characterization: Epicardium Segment 17^99R42|1|Not Assessed||||||C
+OBX|130|ST|LVSegFunc_Segment_1^LV Regional Segmental Function: Segment 1^99R42|1|Not Assessed||||||C
+OBX|131|ST|LVSegFunc_Segment_2^LV Regional Segmental Function: Segment 2^99R42|1|Not Assessed||||||C
+OBX|132|ST|LVSegFunc_Segment_3^LV Regional Segmental Function: Segment 3^99R42|1|Not Assessed||||||C
+OBX|133|ST|LVSegFunc_Segment_4^LV Regional Segmental Function: Segment 4^99R42|1|Not Assessed||||||C
+OBX|134|ST|LVSegFunc_Segment_5^LV Regional Segmental Function: Segment 5^99R42|1|Not Assessed||||||C
+OBX|135|ST|LVSegFunc_Segment_6^LV Regional Segmental Function: Segment 6^99R42|1|Not Assessed||||||C
+OBX|136|ST|LVSegFunc_Segment_7^LV Regional Segmental Function: Segment 7^99R42|1|Not Assessed||||||C
+OBX|137|ST|LVSegFunc_Segment_8^LV Regional Segmental Function: Segment 8^99R42|1|Not Assessed||||||C
+OBX|138|ST|LVSegFunc_Segment_9^LV Regional Segmental Function: Segment 9^99R42|1|Not Assessed||||||C
+OBX|139|ST|LVSegFunc_Segment_10^LV Regional Segmental Function: Segment 10^99R42|1|Not Assessed||||||C
+OBX|140|ST|LVSegFunc_Segment_11^LV Regional Segmental Function: Segment 11^99R42|1|Not Assessed||||||C
+OBX|141|ST|LVSegFunc_Segment_12^LV Regional Segmental Function: Segment 12^99R42|1|Not Assessed||||||C
+OBX|142|ST|LVSegFunc_Segment_13^LV Regional Segmental Function: Segment 13^99R42|1|Not Assessed||||||C
+OBX|143|ST|LVSegFunc_Segment_14^LV Regional Segmental Function: Segment 14^99R42|1|Not Assessed||||||C
+OBX|144|ST|LVSegFunc_Segment_15^LV Regional Segmental Function: Segment 15^99R42|1|Not Assessed||||||C
+OBX|145|ST|LVSegFunc_Segment_16^LV Regional Segmental Function: Segment 16^99R42|1|Not Assessed||||||C
+OBX|146|ST|LVSegFunc_Segment_17^LV Regional Segmental Function: Segment 17^99R42|1|Not Assessed||||||C
+OBX|147|ST|LVSegViability_Segment_1^LV Regional Segmental Viability: Segment 1^99R42|1|Viable||||||C
+OBX|148|ST|LVSegViability_Segment_2^LV Regional Segmental Viability: Segment 2^99R42|1|Viable||||||C
+OBX|149|ST|LVSegViability_Segment_3^LV Regional Segmental Viability: Segment 3^99R42|1|Viable||||||C
+OBX|150|ST|LVSegViability_Segment_4^LV Regional Segmental Viability: Segment 4^99R42|1|Viable||||||C
+OBX|151|ST|LVSegViability_Segment_5^LV Regional Segmental Viability: Segment 5^99R42|1|Viable||||||C
+OBX|152|ST|LVSegViability_Segment_6^LV Regional Segmental Viability: Segment 6^99R42|1|Viable||||||C
+OBX|153|ST|LVSegViability_Segment_7^LV Regional Segmental Viability: Segment 7^99R42|1|Viable||||||C
+OBX|154|ST|LVSegViability_Segment_8^LV Regional Segmental Viability: Segment 8^99R42|1|Viable||||||C
+OBX|155|ST|LVSegViability_Segment_9^LV Regional Segmental Viability: Segment 9^99R42|1|Viable||||||C
+OBX|156|ST|LVSegViability_Segment_10^LV Regional Segmental Viability: Segment 10^99R42|1|Viable||||||C
+OBX|157|ST|LVSegViability_Segment_11^LV Regional Segmental Viability: Segment 11^99R42|1|Viable||||||C
+OBX|158|ST|LVSegViability_Segment_12^LV Regional Segmental Viability: Segment 12^99R42|1|Viable||||||C
+OBX|159|ST|LVSegViability_Segment_13^LV Regional Segmental Viability: Segment 13^99R42|1|Viable||||||C
+OBX|160|ST|LVSegViability_Segment_14^LV Regional Segmental Viability: Segment 14^99R42|1|Viable||||||C
+OBX|161|ST|LVSegViability_Segment_15^LV Regional Segmental Viability: Segment 15^99R42|1|Viable||||||C
+OBX|162|ST|LVSegViability_Segment_16^LV Regional Segmental Viability: Segment 16^99R42|1|Viable||||||C
+OBX|163|ST|LVSegViability_Segment_17^LV Regional Segmental Viability: Segment 17^99R42|1|Viable||||||C
+OBX|164|NM|RV_EDV^RV ED volume^99R42^8822-9^RV ED vol Imaging^LN|1|0|mL|||||C
+OBX|165|NM|RV_EDV_ZValue^RV ED volume Z-Value^99R42|1|0||||||C
+OBX|166|NM|RV_EDVI^RV ED volume / height^99R42|1|0|mL/m|||||C
+OBX|167|NM|RV_EDV_AI^RV ED volume / BSA^99R42|1|0|mL/m2|||||C
+OBX|168|NM|RV_ESV^RV ES volume^99R42^8824-5^RV ES vol Imaging^LN|1|0|mL|||||C
+OBX|169|NM|RV_ESV_ZValue^RV ES volume Z-Value^99R42|1|0||||||C
+OBX|170|NM|RV_ESVI^RV ES volume / Height^99R42|1|0|mL/m|||||C
+OBX|171|NM|RV_ESV_AI^RV ES volume / BSA^99R42|1|0|mL/m2|||||C
+OBX|172|NM|RV_SV^RV SV^99R42^8782-5^RV SV MRI^LN|1|0|mL|||||C
+OBX|173|NM|RV_SV_ZValue^RV SV Z-Value^99R42|1|0||||||C
+OBX|174|NM|RV_SVI^RV SV / height^99R42|1|0|mL/m|||||C
+OBX|175|NM|RV_SV_AI^RV SV / BSA^99R42^8802-1^RV SVI MRI^LN|1|0|mL/m2|||||C
+OBX|176|NM|RV_EF^RV EF^99R42^8818-7^RV EF MRI^LN|1|0|%|||||C
+OBX|177|NM|RV_EF_ZValue^RV EF Z-Value^99R42|1|0||||||C
+OBX|178|NM|RV_CardiacOutput^RV Cardiac Output^99R42|1|0|L/min|||||C
+OBX|179|NM|RV_CardiacOutput_ZValue^RV Cardiac Output Z-Value^99R42|1|0||||||C
+OBX|180|NM|RV_CardiacIndex^RV Cardiac Index^99R42^8762-7^RV Cardiac index MRI^LN|1|0|L/min/m2|||||C
+OBX|181|NM|RV_Mass^RV Mass^99R42|1|0|g|||||C
+OBX|182|NM|RV_Mass_ZValue^RV Mass Z-Value^99R42|1|0||||||C
+OBX|183|NM|RV_MI^RV Mass / height^99R42|1|0|g/m|||||C
+OBX|184|NM|RV_Mass_AI^RV Mass / BSA^99R42|1|0|g/m2|||||C
+OBX|185|NM|RV_MyoMass_Diast^RV Myo Mass Diastole^99R42|1|0|g|||||C
+OBX|186|NM|RV_MyoMass_Diast_I^RV Myo Mass Diastole / height^99R42|1|0|g/m|||||C
+OBX|187|NM|RV_MyoMass_Diast_AI^RV Myo Mass Diastole / BSA^99R42|1|0|g/m2|||||C
+OBX|188|NM|RV_MyoMass_Syst^RV Myo Mass Systole^99R42|1|0|g|||||C
+OBX|189|NM|RV_MyoMass_Syst_I^RV Myo Mass Systole / height^99R42|1|0|g/m|||||C
+OBX|190|NM|RV_MyoMass_Syst_AI^RV Myo Mass Systole / BSA^99R42|1|0|g/m2|||||C
+OBX|191|NM|RV_HeartRate^RV Heart Rate^99R42|1|0||||||C
+OBX|192|NM|TAPSE^TAPSE^99R42|1|0|mm|||||C
+OBX|193|ST|SevRVDilatationNormLV^Severe RV Dilatation and Reduced RV-EF Norm LV^99R42|1|no||||||C
+OBX|194|ST|SevRVDilatationNormLV_LocInRV^SevRVDilatationNormLV Location in RV^99R42|1|||||||C
+OBX|195|ST|LocalizedRVAneurysms^Localized RV aneurysms with early diastolic bulge^99R42|1|no||||||C
+OBX|196|ST|LocalizedRVAneurysms_LocInRV^LocalizedRVAneurysms Location in RV^99R42|1|||||||C
+OBX|197|ST|SevSegRVDilatation^Severe segmental RV dilatation^99R42|1|no||||||C
+OBX|198|ST|SevSegRVDilatation_LocInRV^SevSegRVDilatation Location in RV^99R42|1|||||||C
+OBX|199|ST|MildGlobalRVDilatation^Mild global RV dilatation and/or reduced RV-EF norm LV^99R42|1|no||||||C
+OBX|200|ST|MildGlobalRVDilatation_LocInRV^MildGlobalRVDilatation Location in RV^99R42|1|||||||C
+OBX|201|ST|MildSegRVDilatation^Mild segmental RV dilatation^99R42|1|no||||||C
+OBX|202|ST|MildSegRVDilatation_LocInRV^MildSegRVDilatation Location in RV^99R42|1|||||||C
+OBX|203|ST|RegionalRVHypokinesis^Regional RV hypokinesis^99R42|1|no||||||C
+OBX|204|ST|RegionalRVHypokinesis_LocInRV^RegionalRVHypokinesis Location in RV^99R42|1|||||||C
+OBX|205|ST|RVTrabecularHypertrophy^RV trabecular hypertrophy^99R42|1|no||||||C
+OBX|206|ST|FibroFattyReplacement^Fibro-fatty replacement^99R42|1|no||||||C
+OBX|207|ST|REV2_RegRVAkinesia^Regional RV akinesia^99R42|1|no||||||C
+OBX|208|ST|REV2_RegRVDyskinesia^Regional RV dyskinesia^99R42|1|no||||||C
+OBX|209|ST|REV2_DyssynchRVContraction^Dyssynchronous RV contraction^99R42|1|no||||||C
+OBX|210|ST|REV2_ModSevRVDilatation^Moderate Or Severe RV Dilatation^99R42|1|no||||||C
+OBX|211|ST|REV2_MildRVDilatation^Mild RV Dilatation^99R42|1|no||||||C
+OBX|212|ST|REV2_RVEjecFracMajor^RV ejection fraction <= 40%^99R42|1|no||||||C
+OBX|213|ST|REV2_RVEjecFracMinor^40% < RV ejection fraction <= 45%^99R42|1|no||||||C
+OBX|214|ST|REV2_MajorCriteria^ARVC/D Major Criteria^99R42|1|no||||||C
+OBX|215|ST|REV2_MinorCriteria^ARVC/D Minor Criteria^99R42|1|no||||||C
+OBX|216|ST|REV2_Microaneurysm^Microaneurysm^99R42|1|no||||||C
+OBX|217|ST|REV2_MildSegRVDilatation^Mild segmental RV dilatation^99R42|1|no||||||C
+OBX|218|ST|REV2_FibfatReplacement^Fibro-fatty replacement^99R42|1|no||||||C
+OBX|219|ST|REV2_SevSegRVDilatation^Severe segmental RV dilatation^99R42|1|no||||||C
+OBX|220|ST|REV2_AccordionSign^Accordion Sign^99R42|1|no||||||C
+OBX|221|ST|REV2_TrabHypertrophy^RV trabecular hypertrophy^99R42|1|no||||||C
+OBX|222|NM|T2Ratio^T2 Signal Intensity ratio^99R42|1|0||||||C
+OBX|223|NM|EarlyEnhancementRatio^Early Gadolinium Enhancement Ratio^99R42|1|0||||||C
+OBX|224|NM|LateEnhancementMass^Late Gadolinium Enhancement Mass^99R42|1|0|g|||||C
+OBX|225|NM|LateEnhLVMassRatio^Late Enhancement / LV Mass^99R42|1|0|%|||||C
+OBX|226|NM|GreyzoneVolume^Greyzone Volume^99R42|1|0|mL|||||C
+OBX|227|NM|SalvagedAreaAtRisk^Salvaged Area At Risk^99R42|1|0|mL|||||C
+OBX|228|NM|MyoVolume^Myocardial Volume^99R42|1|0|mL|||||C
+OBX|229|NM|MyoMass^Myocardial Mass^99R42|1|0|g|||||C
+OBX|230|NM|TotalEnhancedVolume^Total Enhanced Volume^99R42|1|0|mL|||||C
+OBX|231|NM|NoReflowVolume^No Reflow Volume^99R42|1|0|mL|||||C
+OBX|232|NM|NoReflowMass^No Reflow Mass^99R42|1|0|g|||||C
+OBX|233|NM|ManuallyExcludedVolume^Manually Excluded Volume^99R42|1|0|mL|||||C
+OBX|234|NM|ManuallyExcludedMass^Manually Excluded Mass^99R42|1|0|g|||||C
+OBX|235|NM|GreyzoneMass^Greyzone Mass^99R42|1|0|g|||||C
+OBX|236|NM|ManuallyExcludedGreyzoneVolume^Manually Excluded Greyzone Volume^99R42|1|0|mL|||||C
+OBX|237|NM|ManuallyExcludedGreyzoneMass^Manually Excluded Greyzone Mass^99R42|1|0|g|||||C
+OBX|238|NM|GreyzoneRel^Greyzone Volume (rel)^99R42|1|0||||||C
+OBX|239|NM|COPulmonaryValve^Cardiac Output Pulmonary Valve^99R42|1|0|L/min|||||C
+OBX|240|NM|COAorticValve^Cardiac Output Aortic Valve^99R42|1|0|L/min|||||C
+OBX|241|NM|QPQS_Ratio^QP/QS Ratio^99R42^,8743-7^Qp/Qs Imaging^LN|1|0||||||C
+OBX|242|NM|QPQSVolume^Qp/Qs Volume^99R42|1|0||||||C
+OBX|243|NM|ShuntVolume^Shunt Volume^99R42|1|0|mL|||||C
+OBX|244|NM|ShuntVolumeMin^Shunt Vol/min^99R42|1|0|L/min|||||C
+OBX|245|NM|AorticDiameter_Root^Aortic Root Diameter^99R42|1|0|mm|||||C
+OBX|246|NM|AorticDiameter_Ascending^Aortic Ascending Diameter^99R42|1|0|mm|||||C
+OBX|247|NM|AorticDiameter_Arch^Aortic Arch Diameter^99R42|1|0|mm|||||C
+OBX|248|NM|AorticDiameter_Descending^Aortic Descending Diameter^99R42|1|0|mm|||||C
+OBX|249|NM|AorticDiameter_AnnulusArea^Aortic Annulus Area^99R42|1|0|mm2|||||C
+OBX|250|NM|AorticDiameter_SinusArea^Aortic Sinus Area^99R42|1|0|mm2|||||C
+OBX|251|NM|LM_Volume^LM Ca Score Volume^99R42|1|0|mm3|||||C
+OBX|252|NM|LM_Mass^LM Ca Score Mass^99R42|1|0|mg|||||C
+OBX|253|ST|LM_Score^LM Ca Score^99R42|1||Agatston|||||C
+OBX|254|NM|LAD_Volume^LA Ca Score Volume^99R42|1|0|mm3|||||C
+OBX|255|NM|LAD_Mass^LA Ca Score Mass^99R42|1|0|mg|||||C
+OBX|256|ST|LAD_Score^LA Ca Score^99R42|1||Agatston|||||C
+OBX|257|NM|CX_Volume^LCX Ca Score Volume^99R42|1|0|mm3|||||C
+OBX|258|NM|CX_Mass^LCX Ca Score Mass^99R42|1|0|mg|||||C
+OBX|259|ST|CX_Score^LCX Ca Score^99R42|1||Agatston|||||C
+OBX|260|NM|RCA_Volume^RC Ca Score Volume^99R42|1|0|mm3|||||C
+OBX|261|NM|RCA_Mass^RC Ca Score Mass^99R42|1|0|mg|||||C
+OBX|262|ST|RCA_Score^RC Ca Score^99R42|1||Agatston|||||C
+OBX|263|NM|Other_Volume^Other Score Volume^99R42|1|0|mm3|||||C
+OBX|264|NM|Other_Mass^Other Score Mass^99R42|1|0|mg|||||C
+OBX|265|ST|Other_Score^Other Score^99R42|1||Agatston|||||C
+OBX|266|NM|Total_Volume^Total Ca Score Volume^99R42|1|0|mm3|||||C
+OBX|267|NM|Total_Mass^Total Ca Score Mass^99R42|1|0|mg|||||C
+OBX|268|ST|Total_Score^Total Ca Score^99R42|1||Agatston|||||C
+OBX|269|NM|CaThreshold^Ca Threshold^99R42|1|0||||||C
+OBX|270|NM|CaMassCalibrationFactor^Ca Mass Calibration Factor^99R42|1|0||||||C
+OBX|271|NM|SliceThickness^Ca Score Slice Thickness^99R42|1|0||||||C
+OBX|272|ST|AgatstonScoreClassification^Agatston Score Classification^99R42|1|||||||C
+OBX|273|ST|CaScoreClassificationResult^Ca Score Classification Result^99R42|1|||||||C
+OBX|274|TX|Findings^Report Findings^99R42^11421-5^Phys find CVS^LN|1|||||||C
+OBX|275|TX|NonNarrativeFindings^Non-Narrative Report Findings^99R42^11421-5^Phys find CVS^LN|1|||||||C
+OBX|276|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|1|LV:||||||C
+OBX|277|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|2|The left ventricular function is normal.||||||C
+OBX|278|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|3|There is normal wall motion.||||||C
+OBX|279|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|4|The left ventricular outflow tract appears normal||||||C
+OBX|280|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|5|Left ventricular size is normal.||||||C
+OBX|281|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|6|There is no LVH.||||||C
+OBX|282|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|7|There is sigmoid septum.||||||C
+OBX|283|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|8|||||||C
+OBX|284|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|9|RV:||||||C
+OBX|285|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|10|Right ventricular size is normal.||||||C
+OBX|286|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|11|There is no right ventricular hypertrophy.||||||C
+OBX|287|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|12|The right ventricular function is normal.||||||C
+OBX|288|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|13|There is no pacemaker lead seen in the RV.||||||C
+OBX|289|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|14|There is no ICD lead seen in the right ventricle.||||||C
+OBX|290|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|15|There is no PPM lead seen in the RV.||||||C
+OBX|291|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|16|There is no evidence for right ventricular scarring.||||||C
+OBX|292|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|17|There is is no right ventricular outflow tract obstruction.||||||C
+OBX|293|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|18|||||||C
+OBX|294|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|19|Atria:||||||C
+OBX|295|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|20|The left atrium is normal.||||||C
+OBX|296|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|21|The right atrium is normal.||||||C
+OBX|297|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|22|There is no evidence of atrial septal defect.||||||C
+OBX|298|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|23|Interatrial septum is normal||||||C
+OBX|299|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|24|There is no ASD .||||||C
+OBX|300|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|25|||||||C
+OBX|301|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|26|Aorta:||||||C
+OBX|302|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|27|The aorta is normal size.||||||C
+OBX|303|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|28|||||||C
+OBX|304|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|29|Mitral Valve:||||||C
+OBX|305|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|30|The mitral valve is normal||||||C
+OBX|306|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|31|There is normal MV structure and function.||||||C
+OBX|307|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|32|There is no MV valve regurgitation.||||||C
+OBX|308|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|33|There is no mitral valve stenosis.||||||C
+OBX|309|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|34|There is no mitral stenosis.||||||C
+OBX|310|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|35|There is no mitral regurgitation.||||||C
+OBX|311|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|36|||||||C
+OBX|312|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|37|Tricuspid Valve:||||||C
+OBX|313|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|38|There is normal TV structure and function.||||||C
+OBX|314|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|39|There is no tricuspid regurgitation.||||||C
+OBX|315|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|40|||||||C
+OBX|316|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|41|Aortic Valve:||||||C
+OBX|317|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|42|There is normal AV structure and function.||||||C
+OBX|318|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|43|The morphology of the aortic valve is trileaflet.||||||C
+OBX|319|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|44|The aortic valve is normal.||||||C
+OBX|320|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|45|There is no aortic stenosis.||||||C
+OBX|321|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|46|There is no aortic regurgitation.||||||C
+OBX|322|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|47|Cannot exclude paravalvular aortic regurgitation.||||||C
+OBX|323|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|48|||||||C
+OBX|324|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|49|Pulmonic Valve:||||||C
+OBX|325|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|50|There is normal PV structure and function.||||||C
+OBX|326|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|51|There is no pulmonic regurgitation.||||||C
+OBX|327|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|52|There is no pulmonic stenosis.||||||C
+OBX|328|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|53|||||||C
+OBX|329|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|54|Pericardium:||||||C
+OBX|330|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|55|Pericardium is normal .||||||C
+OBX|331|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|56|There is not epicardial fat.||||||C
+OBX|332|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|57|There is not pericardial cyst.||||||C
+OBX|333|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|58|||||||C
+OBX|334|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|59|This is some additional information.||||||C
+OBX|335|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|60|||||||C
+OBX|336|TX|TemplateFindings^Template Report Findings^99R42^11421-5^Phys find CVS^LN|61|This is other additional info.||||||C
+OBX|337|TX|Summary^Report Summary^99R42|1|Normal CVI Study. ||||||C
+OBX|338|TX|Summary^Report Summary^99R42|2|The perfusion bed with the inducible perfusion deficit is completely viable. ||||||C
+OBX|339|TX|Summary^Report Summary^99R42|3|InducibleNo evidence of structural heart disease. ||||||C
+OBX|340|TX|Summary^Report Summary^99R42|4| perfusion defect. ||||||C
+OBX|341|TX|Summary^Report Summary^99R42|5|Hypertrophic obstructive cardiomyopathy.||||||C
+OBX|342|NM|Min_LA_Vol^Minimum Left Atrial volume^99R42|1|48.026|mL|||||C
+OBX|343|NM|Min_LA_Vol_I^Minimum Left Atrial volume / height^99R42|1|27.809|mL/m|||||C
+OBX|344|NM|Min_LA_Vol_AI^Minimum Left Atrial volume / BSA^99R42|1|22.628|mL/m2|||||C
+OBX|345|NM|Max_LA_Vol^Maximum Left Atrial volume^99R42|1|60.981|mL|||||C
+OBX|346|NM|Max_LA_Vol_I^Maximum Left Atrial volume / height^99R42|1|35.31|mL/m|||||C
+OBX|347|NM|Max_LA_Vol_AI^Maximum Left Atrial volume / BSA^99R42|1|28.732|mL/m2|||||C
+OBX|348|NM|Min_LA_Area^Minimum Left Atrial area^99R42|1|14.865|cm2|||||C
+OBX|349|NM|Max_LA_Area^Maximum Left Atrial area^99R42|1|16.762|cm2|||||C
+OBX|350|NM|LeftAtrial_EF^Left Atrial Ejection Fraction^99R42|1|21.245|%|||||C
+OBX|351|ST|Atrial_Method^Atrial Method^99R42|1|Monoplan 2CV||||||C
+OBX|352|NM|LA_LVEDAV^Left Atrial LV ED volume^99R42|1|0|mL|||||C
+OBX|353|NM|LA_LVEDAV_I^Left Atrial LV ED volume / height^99R42|1|0|mL/m|||||C
+OBX|354|NM|LA_LVEDAV_AI^Left Atrial LV ED volume / BSA^99R42|1|0|mL/m2|||||C
+OBX|355|NM|LA_LVESAV^Left Atrial LV ES volume^99R42|1|0|mL|||||C
+OBX|356|NM|LA_LVESAV_I^Left Atrial LV ES volume / height^99R42|1|0|mL/m|||||C
+OBX|357|NM|LA_LVESAV_AI^Left Atrial LV ES volume / BSA^99R42|1|0|mL/m2|||||C
+OBX|358|NM|LA_LVEDA_Area^Left Atrial LV ED area^99R42|1|0|cm2|||||C
+OBX|359|NM|LA_LVESA_Area^Left Atrial LV ES area^99R42|1|0|cm2|||||C
+OBX|360|ST|LV_Atrial_Method^LV Atrial Method^99R42|1|||||||C
+OBX|361|NM|LV_EDAV_Diameter^LV ED Atrial volume Diameter^99R42|1|0|mm|||||C
+OBX|362|NM|LV_ESAV_Diameter^LV ES Atrial volume Diameter^99R42|1|0|mm|||||C
+OBX|363|NM|RV_EDAV_Diameter^RV ED Atrial volume Diameter^99R42|1|0|mm|||||C
+OBX|364|NM|RV_ESAV_Diameter^RV ES Atrial volume Diameter^99R42|1|0|mm|||||C

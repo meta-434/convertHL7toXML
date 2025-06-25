@@ -1,0 +1,17 @@
+{
+  "name": "converthl7toxml",
+  "version": "1.0.0",
+  "description": "watch dir & convert HL7 to XML",
+  "main": "convertHL7toXML.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node convertHL7toXML.js"
+  },
+  "author": "meta434",
+  "license": "ISC",
+  "dependencies": {
+    "@amida-tech/hl7-parser": "^1.2.3",
+    "dotenv": "^16.5.0",
+    "xmlbuilder2": "^3.1.1"
+  }
+}
