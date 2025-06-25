@@ -3,7 +3,7 @@ const { Hl7Parser } = require("@amida-tech/hl7-parser");
 const { create } = require("xmlbuilder2");
 const { log } = require("./logger.js");
 
-function segToDI(segment, index) {
+function segToDI(segment, index, obxCount = null) {
   let hold;
 
   if (!segment || !segment.children || !Array.isArray(segment.children)) {
@@ -13,8 +13,9 @@ function segToDI(segment, index) {
 
   // fields are in order: 0|1|2|3|4|5|...
   const fields = segment.children;
-  // console.log(`Fields3: ${JSON.stringify(fields[3]?.children)}}`);
-  console.log(`fields[0] is type ${fields[0]?.value} for element #${index}`);
+
+  console.log(`fields[${index}] is type ${fields[index]?.name}`);
+  console.log(`Fields5: ${JSON.stringify(fields[5]?.children)}`);
 
   if (fields[0]?.value === "MSH") {
     hold = {
@@ -38,43 +39,43 @@ function segToDI(segment, index) {
       DI: [
         {
           "@K": "externalId",
-          "@V": `${fields[2]?.value}`,
+          "@V": `${fields[1]?.value}`,
         },
         {
           "@K": "internalId",
-          "@V": `${fields[11]?.value}`,
+          "@V": `${fields[2]?.value}`,
         },
         {
           "@K": "alternateId",
-          "@V": `${fields[2]?.value}`,
+          "@V": `${fields[3]?.value}`,
         },
         {
           "@K": "FamilyName",
-          "@V": `${fields[2]?.value}`,
+          "@V": `${fields[5]?.children?.[0]?.value}`,
         },
         {
           "@K": "GivenName",
-          "@V": `${fields[2]?.value}`,
+          "@V": `${fields[5]?.children?.[1]?.value}`,
         },
         {
           "@K": "MiddleName",
-          "@V": `${fields[2]?.value}`,
+          "@V": `${fields[5]?.children?.[2]?.value}`,
         },
         {
           "@K": "DateOfBirth",
-          "@V": `${fields[2]?.value}`,
+          "@V": `${fields[7]?.value}`,
         },
         {
           "@K": "Sex",
-          "@V": `${fields[2]?.value}`,
+          "@V": `${fields[8]?.value}`,
         },
         {
           "@K": "DicomPatientId",
-          "@V": `${fields[2]?.value}`,
+          "@V": ``,
         },
         {
           "@K": "PatientAccountNumber",
-          "@V": `${fields[2]?.value}`,
+          "@V": `${fields[18]?.value}`,
         },
       ],
     };
@@ -87,8 +88,9 @@ function segToDI(segment, index) {
   // if (fields[0]?.value === "OBX") { }
   // OBX segment map
   if (fields[0]?.value === "OBX") {
+    console.log("obx counter is ", obxCount);
     hold = {
-      "@K": `Value${index}`,
+      "@K": `Value${obxCount}`,
       "@T": "0",
       DI: [
         {
@@ -113,7 +115,6 @@ function segToDI(segment, index) {
 
   return hold;
 }
-
 /**
  * converts hl7 to JS object, then converts object to XML
  * @param {*} HL7file - the full HL7 file
@@ -123,6 +124,8 @@ function parseHL7ToXmlObject(hl7Text) {
   const model = parser.getHl7Model(hl7Text.trimEnd());
   const segments = model.children;
   const diBlocks = [];
+  let obxCounter = 1;
+
   const segmentsValid = segments.filter((seg) => {
     if (!seg) {
       console.warn("Warning: undefined segment detected");
@@ -140,9 +143,14 @@ function parseHL7ToXmlObject(hl7Text) {
     );
   });
 
-  segmentsValid.forEach((segment, index) =>
-    diBlocks.push(segToDI(segment, index)),
-  );
+  segmentsValid.forEach((segment, index) => {
+    if (segment.children?.[0]?.value === "OBX") {
+      diBlocks.push(segToDI(segment, index, obxCounter));
+      obxCounter++;
+    } else {
+      diBlocks.push(segToDI(segment, index));
+    }
+  });
 
   // console.log("diBlocks =", JSON.stringify(diBlocks, null, 2));
 
