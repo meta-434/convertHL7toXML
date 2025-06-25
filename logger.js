@@ -7,7 +7,6 @@ let LOG_FILE = null;
 
 /**
  * Initialize logging configuration
- * Should be called once, early in main script
  */
 function initLogger() {
   ENABLE_LOGGING =
@@ -22,7 +21,7 @@ function initLogger() {
 
 /**
  * Log a message to console and/or file depending on flags
- * @param {string} message - The message to log
+ * @param {String} message - The message to log
  */
 function log(message) {
   const timestamp = new Date().toISOString();

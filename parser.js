@@ -3,6 +3,13 @@ const { Hl7Parser } = require("@amida-tech/hl7-parser");
 const { create } = require("xmlbuilder2");
 const { log } = require("./logger.js");
 
+/**
+ * Maps segments of HL7Parser objects in format for xmlbuilder2 to build XML
+ * @param {String} segment
+ * @param {Number} index
+ * @param {Number} obxCount (default null) allows tracking of obx index
+ * @returns
+ */
 function segToDI(segment, index, obxCount = null) {
   let hold;
 
@@ -115,9 +122,10 @@ function segToDI(segment, index, obxCount = null) {
 
   return hold;
 }
+
 /**
  * converts hl7 to JS object, then converts object to XML
- * @param {*} HL7file - the full HL7 file
+ * @param {String} HL7file - the full HL7 file
  */
 function parseHL7ToXmlObject(hl7Text) {
   const parser = new Hl7Parser();

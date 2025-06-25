@@ -7,11 +7,11 @@ const { parseHL7ToXmlObject } = require("./parser.js");
 function transform(content) {
   try {
     const result = parseHL7ToXmlObject(content);
-    console.log("🎯 parseHL7ToXmlObject returned: \n", result);
+    console.log("parseHL7ToXmlObject returned: \n", result);
   } catch (err) {
-    console.error("❌ parseHL7ToXmlObject threw an error:", err.message);
+    console.error("parseHL7ToXmlObject threw an error:", err.message);
   }
-  return content; // No-op for now
+  return content; // TODO: No-op until parser.js logic complete
 }
 
 module.exports = { transform };
